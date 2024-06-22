@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: "PlazaSHInline";
+    src:
+      url("/fonts/PlazaSHInline/font.woff2") format("woff2"),
+      url("/fonts/PlazaSHInline/font.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "ThirstyRoughLight";
+    src:
+      url("/fonts/thirstyroughlight-webfont.woff2") format("woff2"),
+      url("/fonts/thirstyroughlight-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ThirstyRoughBold";
+    src:
+      url("/fonts/thirstyroughbold-webfont.woff2") format("woff2"),
+      url("/fonts/thirstyroughbold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ThirstyRoughRegularTwo";
+    src:
+      url("/fonts/thirstyroughregulartwo-webfont.woff2") format("woff2"),
+      url("/fonts/thirstyroughregulartwo-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
