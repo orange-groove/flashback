@@ -1,5 +1,6 @@
 import React from "react"
 import { Box, Flex, Heading } from "@chakra-ui/react"
+import PropTypes from "prop-types"
 import RichText from "@/components/RichText"
 
 interface SpecialProps {

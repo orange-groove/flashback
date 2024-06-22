@@ -5,7 +5,7 @@ import {
   documentToReactComponents,
 } from "@contentful/rich-text-react-renderer"
 import PropTypes from "prop-types"
-import { Box, Divider, Heading, Link } from "@chakra-ui/react"
+import { Box, BoxProps, Divider, Heading, Link } from "@chakra-ui/react"
 import Image from "next/image"
 
 const options: Options = {
@@ -91,9 +91,8 @@ const options: Options = {
   },
 }
 
-interface RichTextProps {
+type RichTextProps = BoxProps & {
   children: Document
-  color: string
 }
 
 const RichText = ({ children, ...props }: RichTextProps) => {
