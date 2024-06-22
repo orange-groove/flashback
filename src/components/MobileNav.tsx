@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
+// @ts-ignore
 import Menu from "react-burger-menu/lib/menus/push"
 import { Button, Text } from "@chakra-ui/react"
 import { useSetAtom } from "jotai"
