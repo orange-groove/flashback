@@ -93,6 +93,7 @@ const options: Options = {
 
 interface RichTextProps {
   children: Document
+  color: string
 }
 
 const RichText = ({ children, ...props }: RichTextProps) => {
