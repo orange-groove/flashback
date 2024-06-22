@@ -47,3 +47,6 @@
     NEXT_PUBLIC_GOOGLE_CLIENT_SECRET = "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"
     NEXT_PUBLIC_GOOGLE_EMAIL = "flashback.rocks.rh@gmail.com"
     GOOGLE_PASSWORD = "xljz ltgz xgmv luiv"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

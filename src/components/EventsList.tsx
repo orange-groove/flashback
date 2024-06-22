@@ -1,11 +1,12 @@
 "use client"
 
 import { Box, Flex, ListItem, UnorderedList } from "@chakra-ui/react"
+import type { BoxProps } from "@chakra-ui/react"
 import React from "react"
 import Event from "@/components/Event"
 import useEvents from "@/hooks/useEvents"
 
-interface EventsListProps {
+interface EventsListProps extends BoxProps {
   limit: number
 }
 
