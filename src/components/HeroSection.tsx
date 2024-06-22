@@ -4,16 +4,18 @@ import { Box, Flex, Heading, Image } from "@chakra-ui/react"
 import React from "react"
 import { motion } from "framer-motion"
 import HeroVideo from "@/components/HeroVideo"
+import { Video } from "@/types"
 
 interface HeroSectionProps {
-  data: any
+  videos: Video[]
+  logo: string
 }
 
-export default function HeroSection({ data }: HeroSectionProps) {
+export default function HeroSection({ videos, logo }: HeroSectionProps) {
   return (
     <Box as="section">
       <Box position="relative" height="100vh">
-        <HeroVideo videos={data?.homePage?.videosCollection?.items} />
+        <HeroVideo videos={videos} />
         <Flex
           flexDirection="column"
           alignItems="center"
@@ -33,7 +35,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
             transition={{ duration: 5 }}
           >
             <Image
-              src={data?.asset?.url}
+              src={logo}
               alt="Flashback Logo"
               width={["75%", "33.3%"]}
               m="0 auto"

@@ -2,12 +2,15 @@ import React from "react"
 import { Button, Flex, Heading } from "@chakra-ui/react"
 import Special from "@/components/Special"
 import Link from "next/link"
+import { FoodSpecial } from "@/types"
 
 interface SpecialsSectionProps {
-  data: any
+  specials: FoodSpecial[]
 }
 
-export default async function SpecialsSection({ data }: SpecialsSectionProps) {
+export default async function SpecialsSection({
+  specials,
+}: SpecialsSectionProps) {
   return (
     <Flex
       flexDirection="column"
@@ -29,7 +32,7 @@ export default async function SpecialsSection({ data }: SpecialsSectionProps) {
         Food Specials
       </Heading>
 
-      {data.homePage?.foodSpecialsCollection?.items?.map((special, index) => (
+      {specials?.map((special, index) => (
         <Special
           key={special.id}
           title={special.title}

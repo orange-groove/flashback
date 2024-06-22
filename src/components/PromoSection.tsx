@@ -3,12 +3,13 @@
 import { Box, Flex, Image } from "@chakra-ui/react"
 import React from "react"
 import { Carousel } from "nuka-carousel"
+import { Promotion } from "@/types"
 
 interface PromoSectionProps {
-  data: any
+  promos: Promotion[]
 }
 
-export default async function PromoSection({ data }: PromoSectionProps) {
+export default async function PromoSection({ promos }: PromoSectionProps) {
   return (
     <Flex
       as="section"
@@ -19,7 +20,7 @@ export default async function PromoSection({ data }: PromoSectionProps) {
     >
       <Box sx={{ width: "50%", m: "0 auto" }}>
         <Carousel autoplay={true} autoplayInterval={5000}>
-          {data.homePage?.promosCollection.items?.map((promo, index) => (
+          {promos?.map((promo, index) => (
             <Flex
               key={index}
               width="100%"

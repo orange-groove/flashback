@@ -10,10 +10,15 @@ export default async function HomePage() {
 
   return (
     <>
-      <HeroSection data={data} />
+      <HeroSection
+        videos={data?.homePage?.videosCollection?.items}
+        logo={data?.asset?.url}
+      />
       <Flex flexDirection="column" width="100%" position="relative">
-        <SpecialsSection data={data} />
-        <PromoSection data={data} />
+        <SpecialsSection
+          specials={data.homePage?.foodSpecialsCollection?.items}
+        />
+        <PromoSection promos={data.homePage?.promosCollection.items} />
         <UpcomingEventsSection />
       </Flex>
     </>
