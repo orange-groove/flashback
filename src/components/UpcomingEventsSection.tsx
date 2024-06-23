@@ -25,6 +25,7 @@ function UpcomingEventsSection() {
         size={["2xl", "3xl"]}
         variant="script"
         color="white"
+        p={6}
         mb={10}
       >
         Upcoming Events

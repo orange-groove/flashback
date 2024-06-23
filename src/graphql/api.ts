@@ -33,6 +33,7 @@ export async function getSiteData(): Promise<any> {
               image {
                 url
               }
+              url
             }
           }
         }

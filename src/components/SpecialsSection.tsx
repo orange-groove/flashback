@@ -27,6 +27,7 @@ export default async function SpecialsSection({
         size={{ base: "2xl", md: "3xl" }}
         variant="script"
         color="white"
+        p={6}
         mb={10}
       >
         Food Specials

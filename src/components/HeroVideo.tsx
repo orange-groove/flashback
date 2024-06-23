@@ -69,7 +69,7 @@ export default function HeroVideo({ videos }: HeroVideoProps) {
       <Box
         width="100%"
         height="100%"
-        background="linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,1) 100%)"
+        background="linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%)"
         position="absolute"
         zIndex={1}
       />

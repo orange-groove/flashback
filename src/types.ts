@@ -6,6 +6,7 @@ export type Promotion = {
     url: string
     title: string
   }
+  url: string
 }
 
 export type Event = {
