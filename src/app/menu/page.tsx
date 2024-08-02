@@ -1,8 +1,10 @@
 import * as React from "react"
-import menuJson from "@/content/menu.json"
 import { Box, Flex, Heading } from "@chakra-ui/react"
+import useMenu from "@/hooks/useMenu"
 
-const MenuPage = () => {
+const MenuPage = async () => {
+  const menu = await useMenu()
+
   return (
     <>
       <Flex flexDirection="column" mt="60px">
@@ -24,7 +26,7 @@ const MenuPage = () => {
             Menu
           </Heading>
         </Flex>
-        {Object.entries(menuJson).map(([categoryName, category]) => (
+        {Object.entries(menu).map(([categoryName, category]) => (
           <Flex
             key={categoryName}
             flexDirection="column"
