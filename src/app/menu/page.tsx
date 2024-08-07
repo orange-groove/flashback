@@ -57,7 +57,7 @@ const MenuPage = async () => {
                 columnCount: [1, 2, 4],
               }}
             >
-              {category.items.map((item) => (
+              {category?.items?.map((item) => (
                 <Flex
                   key={item.name}
                   as="li"

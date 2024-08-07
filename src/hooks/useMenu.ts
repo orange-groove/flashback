@@ -33,8 +33,8 @@ interface Menu {
 }
 
 export default async function useMenu(): Promise<Menu> {
-  const categoriesResponse = await fetch(CATEGORIES_URL)
-  const itemsResponse = await fetch(ITEMS_URL)
+  const categoriesResponse = await fetch(CATEGORIES_URL, { cache: "no-store" })
+  const itemsResponse = await fetch(ITEMS_URL, { cache: "no-store" })
   const categoriesJson = await categoriesResponse.json()
   const itemsJson = await itemsResponse.json()
   const categories: Category[] = categoriesJson.categories

@@ -8,7 +8,6 @@ import MobileNav from "@/components/MobileNav"
 import Providers from "@/components/Providers"
 import Footer from "@/components/Footer"
 import Head from "next/head"
-import localFont from "next/font/local"
 
 // export const metadata = {
 //   title: "Flashback",
