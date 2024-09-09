@@ -39,7 +39,7 @@ export default function ContactForm() {
     e.preventDefault()
 
     try {
-      const res = await fetch("/send-mail", {
+      const res = await fetch("/api/send-mail", {
         method: "POST",
         headers: {
           Accept: "application/json",
