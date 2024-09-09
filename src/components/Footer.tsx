@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Social icons and contact information */}
         <Flex flexDirection="column" color="black" gap={6} p={8} lineHeight={1}>
           <Box>
-            <Heading as="h3" variant="script" size="xl">
+            <Heading as="h3" variant="script" size="xl" mb={2}>
               Location
             </Heading>
             <Flex alignItems="top" gap={2}>
