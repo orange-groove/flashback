@@ -80,7 +80,7 @@ const Footer = () => {
               Hours
             </Heading>
             <Flex sx={{ flexDirection: "column", gap: 2 }}>
-              <Box>MON-THURS: 2:00PM - 12:00AM</Box>
+              <Box>MON-THU: 2:00PM - 12:00AM</Box>
               <Box>KITCHEN CLOSES AT 10PM</Box>
               <Box sx={{ borderBottom: "1px solid black" }} />
               <Box>FRI-SAT: 11:30AM - 2:00AM</Box>
