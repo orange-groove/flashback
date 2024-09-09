@@ -14,7 +14,6 @@ export default async function AboutPage() {
         py={[20, null, null, 60]}
         px={[10, null, null, 60]}
         width="100%"
-        height="100vh"
         fontSize={20}
       >
         <Heading
