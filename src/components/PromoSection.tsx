@@ -7,7 +7,6 @@ import { Promotion } from "@/types"
 import Link from "next/link"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { slide } from "react-burger-menu"
 
 interface PromoSectionProps {
   promos: Promotion[]
@@ -55,6 +54,7 @@ export default function PromoSection({ promos }: PromoSectionProps) {
           infinite
           pauseOnHover
           dots
+          arrows={false}
         >
           {promos?.map((promo, key) => (
             <Link key={`promo-${key}`} href={promo.url || "#"} target="_blank">

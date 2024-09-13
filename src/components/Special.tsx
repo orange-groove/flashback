@@ -43,7 +43,6 @@ const Special = ({ title, description, image, reverse }: SpecialProps) => {
       </Flex>
       <Flex
         flexDirection="column"
-        ml={5}
         width={{ base: "100%", md: "50%" }}
         gap={3}
         p={[3, 6]}
