@@ -1,7 +1,6 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
-import { Box, Flex, useBreakpointValue } from "@chakra-ui/react"
-import { motion } from "framer-motion"
+import { Box, Flex, Show, Hide } from "@chakra-ui/react"
 import NavBar from "@/components/NavBar"
 import OrderModal from "@/components/OrderModal"
 import MobileNav from "@/components/MobileNav"
@@ -25,8 +24,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // const isMobile = useBreakpointValue({ base: true, md: false })
-
   return (
     <html lang="en" className={`${inter.variable}`}>
       <Head>
@@ -73,8 +70,12 @@ export default function RootLayout({
             // transition={{ duration: 0.25 }}
           >
             <Box id="outer-container" height="100%" p={0}>
-              <NavBar />
-              {/* {isMobile ? <MobileNav /> : <NavBar />} */}
+              <Show below="md">
+                <MobileNav />
+              </Show>
+              <Hide below="md">
+                <NavBar />
+              </Hide>
               <Flex id="page-wrap" flexDirection="column" height="100%">
                 <Box flexGrow={1} position="relative">
                   {children}
