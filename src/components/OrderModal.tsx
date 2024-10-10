@@ -38,7 +38,7 @@ const OrderModal = () => {
               bottom: 0,
               right: 0,
               width: "100%",
-              height: "100%",
+              height: "calc(100% - 50px)",
               border: "none",
               margin: 0,
               padding: 0,
