@@ -32,7 +32,7 @@ const OrderModal = () => {
             src="https://online.skytab.com/159be0622ebd2df1f853b75c08601a94"
             title="Order Online"
             sx={{
-              position: "fixed",
+              position: "absolute",
               top: 50,
               left: 0,
               bottom: 0,
